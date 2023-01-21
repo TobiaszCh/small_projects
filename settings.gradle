@@ -1,3 +1,4 @@
 rootProject.name = 'small_projects'
 include 'game-rps'
+include 'short-intresting-tasks'
 
