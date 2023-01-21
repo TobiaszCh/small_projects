@@ -6,38 +6,52 @@ public class LogicGame {
 
     Scanner scanner = new Scanner(System.in);
     Random computer = new Random();
+    GameLogicElements gameLogicElements = new GameLogicElements();
     Instruction instruction = new Instruction();
     boolean end = false;
 
-    public void logic() {
+    public void logic() throws WrongNumber {
         instruction.instruction();
         System.out.println("Start game");
         System.out.print("How much round: ");
+        int scoreC = 0;
+        int scoreM = 0;
         int round = scanner.nextInt();
         int restart = round;
-        if (round > 0 && round < 11) {
+        if (round > 0 && round < 10) {
             while (!end) {
                 System.out.print("You: ");
                 int me = scanner.nextInt();
-                if (me == 5) {
-                    round = restart;
-                    System.out.println("New game");
+                if (me >= 0 && me < 6) {
+                    if (me == 4) {
+                        round = restart;
+                        System.out.println("New game");
+                    }
+                    int twoGamer = computer.nextInt( 3);
+                    System.out.println("Two gamer " + twoGamer);
+                    round--;
+                    if ((me == 0 && twoGamer == 2) || (me == 1 && twoGamer == 0) || (me == 2 && twoGamer == 1)) {
+                        scoreM++;
+                        System.out.println("I win! :)");
+                    } else if (me == twoGamer) {
+                        System.out.println("Tie! :(");
+                    } else {
+                        scoreC++;
+                        System.out.println("Two gamer win! :(");
+                    }
+                    if (round == 0 || Objects.equals(me, 3)) {
+                        end = true;
+                        System.out.println("Game is finished");
+                        gameLogicElements.winner(scoreM, scoreC);
+                    }
                 }
-                int twoGamer = computer.nextInt(3);
-                System.out.println("Two gamer " + twoGamer);
-                round--;
-                if ((me == 0 && twoGamer == 2) || (me == 1 && twoGamer == 0) || (me == 2 && twoGamer == 1)) {
-                    System.out.println("I win! :)");
-                } else if (me == twoGamer) {
-                    System.out.println("Tie! :(");
-                } else {
-                    System.out.println("Two gamer win! :(");
-                }
-                if (round == 0 || Objects.equals(me, 4)) {
-                    end = true;
-                    System.out.println("Game is finished");
+                else {
+                    throw new WrongNumber();
                 }
             }
+        }
+        else {
+            throw new WrongNumber();
         }
     }
 }
