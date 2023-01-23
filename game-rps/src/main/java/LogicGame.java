@@ -2,7 +2,7 @@ import java.util.Objects;
 import java.util.Random;
 import java.util.Scanner;
 
-public class LogicGame {
+class LogicGame {
 
     Scanner scanner = new Scanner(System.in);
     Random computer = new Random();
