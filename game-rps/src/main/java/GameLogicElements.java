@@ -9,4 +9,5 @@ public class GameLogicElements {
             System.out.println("We have tie : " + computer + " : " + gamer + ":)");
         }
     }
+
 }

@@ -35,7 +35,7 @@ class LogicGame {
                         System.out.println("I win! :)");
                     } else if (me == twoGamer) {
                         System.out.println("Tie! :(");
-                    } else {
+                    } else if (me == 2 || me == 0 || me == 1) {
                         scoreC++;
                         System.out.println("Two gamer win! :(");
                     }
