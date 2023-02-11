@@ -1,6 +1,6 @@
 public class Main {
     public static void main(String[] args) {
-        PigLatin.pigIt("Pig latin is cool");
+        LongestConsec.longestConsec(new String[] {"ejjjjmmtthh", "zxxuueeg", "aanlljrrrxx", "dqqqaaabbb", "oocccffuucccjjjkkkjyyyeehh"}, 2);
 
     }
 }
