@@ -4,7 +4,7 @@ public class Decryptor {
         StringBuilder result = new StringBuilder();
 
         for (int i = 0; i < example.length(); i++) {
-            result.append((char)(example.charAt(i) + 3));
+            result.append((char)(example.charAt(i) + 1));
         }
         return result;
     }
