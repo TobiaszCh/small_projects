@@ -10,7 +10,7 @@ import java.util.List;
 import java.util.Scanner;
 
 public class NotesApp {
-    private final static String PATH = "C:/Projects/small_projects/tasks_to_mentor/src/main/java/notes/";
+    private final static String PATH = "C:/Projects/small_projects/tasks_for_mentor/src/main/java/notes/";
     private final List<String> notes;
     private final Scanner scanner;
     private final DateTimeFormatter dateTimeFormatter;
