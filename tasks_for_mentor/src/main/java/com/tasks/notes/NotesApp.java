@@ -1,4 +1,4 @@
-package notes;
+package com.tasks.notes;
 
 import java.io.FileWriter;
 import java.io.IOException;
