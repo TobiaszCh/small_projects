@@ -1,3 +1,4 @@
+--2h...
 CREATE TABLE Owner(
 	ID SERIAL PRIMARY KEY,
 	name_owner VARCHAR(100)
