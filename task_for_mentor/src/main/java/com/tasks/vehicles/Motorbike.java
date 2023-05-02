@@ -1,15 +1,19 @@
 package com.tasks.vehicles;
 
-import lombok.RequiredArgsConstructor;
-
-@RequiredArgsConstructor
-public class Car implements Vehicle{
+public class Motorbike implements Vehicle{
 
     private final String name;
     private final String engine;
     private final String performance;
-    private final double powerAndTorque;
 
+    public Motorbike(String name, String engine, String performance, double powerAndTorque) {
+        this.name = name;
+        this.engine = engine;
+        this.performance = performance;
+        this.powerAndTorque = powerAndTorque;
+    }
+
+    private final double powerAndTorque;
 
     @Override
     public String getName() {

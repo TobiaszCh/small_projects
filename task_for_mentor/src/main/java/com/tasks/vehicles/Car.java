@@ -1,18 +1,20 @@
 package com.tasks.vehicles;
 
-import lombok.RequiredArgsConstructor;
 
-import java.util.ArrayList;
-import java.util.List;
 
-@RequiredArgsConstructor
-public class Motorbike implements Vehicle{
+public class Car implements Vehicle{
 
     private final String name;
     private final String engine;
     private final String performance;
     private final double powerAndTorque;
-    private List<Motorbike> motorbikes = new ArrayList<>();
+
+    public Car(String name, String engine, String performance, double powerAndTorque) {
+        this.name = name;
+        this.engine = engine;
+        this.performance = performance;
+        this.powerAndTorque = powerAndTorque;
+    }
 
     @Override
     public String getName() {
