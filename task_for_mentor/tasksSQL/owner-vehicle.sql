@@ -1,4 +1,3 @@
---2h...
 CREATE TABLE Owner(
 	ID SERIAL PRIMARY KEY,
 	name_owner VARCHAR(100)
@@ -74,7 +73,36 @@ SELECT * FROM vehicle;
 SELECT * FROM owner;
 SELECT * FROM owner_vehicle;
 
-SELECT o.name_owner, v.name_vehicle, v.engine
+--Ile jest właścicieli, którzy nie mają żadnego pojazdu
+SELECT COUNT(*) AS OWNERS_WITHOUT_A_CAR FROM owner_vehicle
+where vehicle_id IS NULL;
+
+--Wyświetl pojazdy, które mają więcej niż jednego właściciela
+SELECT v.name_vehicle, COUNT(ov.vehicle_id)
 FROM owner_vehicle ov
-INNER JOIN Owner o ON o.id = ov.owner_id
-INNER JOIN Vehicle v ON v.id = ov.vehicle_id;
+INNER JOIN Vehicle v ON v.id = ov.vehicle_id
+GROUP BY v.name_vehicle
+HAVING COUNT(ov.vehicle_id) > 5;
+
+--Wyswietl istniejące w bazie typy pojazdów posortowane alfabetycznie
+SELECT * from vehicle
+ORDER BY name_vehicle;
+
+--wyświetl pojazdy, które mają moc powyżej 100KM lub nie maja silnika
+SELECT * from vehicle
+where engine > 100;
+
+--wyswietl pojazdy, które maja conajmniej 2 koła
+SELECT * from vehicle
+where number_of_wheels > 2;
+
+--wyswietl pojazdy, ktore są w bazie dłużej niż miesiąc
+SELECT * FROM vehicle
+WHERE age(current_date, length_of_stay) > interval '1 month';
+
+--Wyświetl identyfikatory pojazdów, których właściciel ma więcej niż 3 pojazdy
+SELECT v.id, COUNT(vehicle_id)
+FROM owner_vehicle ov
+INNER JOIN vehicle v ON ov.vehicle_id = v.id
+GROUP BY v.id
+HAVING COUNT(vehicle_id) > 3;

@@ -4,8 +4,6 @@ import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.nio.file.Path;
-import java.util.ArrayList;
-import java.util.List;
 
 public class VehicleWriter {
     private static final String CAR = "C:/Projects/small_projects/task_for_mentor/src/main/java/com/tasks/vehicles/files/Car";

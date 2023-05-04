@@ -3,4 +3,5 @@ include 'game-rps'
 include 'short-intresting-tasks'
 include 'encrypt_and_decrypt_files'
 include 'tasks_for_mentor'
+include 'task_for_mentor'
 
