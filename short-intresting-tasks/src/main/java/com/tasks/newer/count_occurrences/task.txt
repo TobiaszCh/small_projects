@@ -1,0 +1,23 @@
+Oto przykładowe zadanie rekrutacyjne w stylu Codewars dla osoby ubiegającej się o stanowisko Junior Java Developer:
+
+Zadanie:
+Twoim zadaniem jest napisanie metody w języku Java, która będzie zwracać liczbę wystąpień podanej frazy w tekście.
+
+Metoda powinna przyjmować dwa argumenty:
+
+tekst (typ String) - tekst, w którym szukamy wystąpień
+fraza (typ String) - fraza, której wystąpienia szukamy
+Metoda powinna zwracać liczbę wystąpień frazy w tekście.
+
+Przykłady działania metody:
+
+Dla tekstu "Ala ma kota, a kot ma Ale" i frazy "ma" metoda powinna zwrócić wartość 2.
+Dla tekstu "Ala ma kota, a kot ma Ale" i frazy "Ala" metoda powinna zwrócić wartość 1.
+Dla tekstu "Ala ma kota, a kot ma Ale" i frazy "pies" metoda powinna zwrócić wartość 0.
+Uwaga:
+
+Metoda powinna ignorować wielkość liter.
+Metoda powinna działać dla dowolnych tekstów i fraz.
+Metoda powinna być napisana w sposób efektywny pod kątem wykorzystania pamięci i czasu działania.
+
+time - 14 min
