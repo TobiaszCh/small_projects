@@ -1,2 +1,3 @@
 owner-vehicle (3h)
 customer-order (1,25h)
+employee-project(2h(stworzenie tabeli, wartosci i 2 zapytań), ...)
