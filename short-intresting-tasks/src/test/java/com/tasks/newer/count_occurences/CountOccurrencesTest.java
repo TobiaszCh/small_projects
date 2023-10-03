@@ -4,7 +4,7 @@ import com.tasks.newer.count_occurrences.CountOccurrences;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
-class CountOccurrencesTestSuite {
+class CountOccurrencesTest {
 
     @Test
     public void testCountOccurrences() {

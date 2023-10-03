@@ -3,7 +3,7 @@ package com.tasks.newer.camel_casing;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
-class CamelCasingTestSuite {
+class CamelCasingTest {
 
     @Test
     public void tests() {

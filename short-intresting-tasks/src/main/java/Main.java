@@ -6,9 +6,8 @@ import java.util.stream.Collectors;
 
 public class Main {
     public static void main(String[] args) {
-        //StringMerger.isMerge("codewars", "code", "wars"); //true
-        StringMerger.isMerge("codewars", "cdwr", "oeas"); //true
-        StringMerger.isMerge("codewars", "cod", "wars"); //false
+        System.out.println(Math.sqrt(2));
+
     }
 
 
