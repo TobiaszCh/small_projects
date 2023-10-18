@@ -1,14 +1,13 @@
-import com.tasks.older.Palindrome;
-import com.tasks.older.StringMerger;
-
-import java.util.List;
-import java.util.stream.Collectors;
+import java.util.Arrays;
+import java.util.stream.IntStream;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println(Math.sqrt(2));
+        int[] a = new int[]{1,2,3};
+        int c = Arrays.stream(a).parallel().;
+        //String a = "Dscs";
+        //System.out.println(a.replace('s', 'c'));
+        System.out.println(c);
 
     }
-
-
 }
