@@ -1,0 +1,13 @@
+Oto przykładowe zadanie na rozmowę rekrutacyjną z Java,
+które wymaga napisania jednej metody. Zadanie to polega na napisaniu metody,
+która sprawdza, czy podany ciąg znaków (String) jest palindromem.
+Palindrom to wyrażenie lub słowo, które czyta się tak samo od lewej do prawej i od prawej do lewej.
+Na przykład: "kajak", "radar" i "level" są palindromami.
+
+Twoim zadaniem jest zaimplementowanie metody isPalindrome, która zwróci true,
+jeśli podany ciąg znaków jest palindromem, a w przeciwnym razie false.
+Możesz użyć różnych podejść do rozwiązania tego zadania, takich jak porównywanie znaków od początku i końca ciągu,
+lub stosując inne metody i algorytmy. Ważne jest, aby zademonstrować swoje umiejętności w zakresie pracy z ciągami
+znaków i struktur danych w języku Java.
+
+Pracowalem 1h nad tym :( 
