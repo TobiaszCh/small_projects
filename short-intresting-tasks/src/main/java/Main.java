@@ -1,11 +1,8 @@
-import com.tasks.newer.palindrome.PalindromeChecker;
-
-import java.util.Arrays;
-import java.util.stream.IntStream;
+import com.tasks.newer.ugly.Ugly;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println(PalindromeChecker.isPalindrome(""));
+
 
     }
 }
